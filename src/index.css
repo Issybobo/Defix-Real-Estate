@@ -8,11 +8,11 @@
 
 :root {
   --clr-white: #FFFFFF;
-  --clr-black: #202020;
+  --clr-black: #b80000;
   --clr-grey: #707070;
   --clr-blue: #6C63FF;
-  --clr-blue-2: #4c46b6;
-  --clr-green: #4fb646;
+  --clr-blue-2: #469ab6;
+  --clr-green: #26a61a;
 }
 
 body {
@@ -45,7 +45,7 @@ nav {
 }
 
 .nav__brand h1 {
-  color: var(--clr-blue);
+  color: var(--clr-white);
   font-size: 2.5em;
   font-weight: 800;
 }
@@ -344,6 +344,8 @@ header {
 
   cursor: default;
 }
+
+.style {text-align: center;}
 
 @media screen and (max-width: 768px) {
   nav {
