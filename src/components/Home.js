@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 import close from '../assets/close.svg';
 
+
 const Home = ({ home, provider, account, escrow, togglePop }) => {
     const [hasBought, setHasBought] = useState(false)
     const [hasLended, setHasLended] = useState(false)
@@ -120,7 +121,7 @@ const Home = ({ home, provider, account, escrow, togglePop }) => {
 
             <div className='home__details'>
                 <div className="home__image">
-                    <img src={home.image} alt="Home" />
+                    <img className='nft-img' src={home.image} alt="Home" />
                 </div>
                 <div className="home__overview">
                     <h1>{home.name}</h1>
@@ -130,7 +131,6 @@ const Home = ({ home, provider, account, escrow, togglePop }) => {
                         <strong>{home.attributes[4].value}</strong> sqft
                     </p>
                     <p>{home.address}</p>
-
                     <h2>{home.attributes[0].value} ETH</h2>
                     
 

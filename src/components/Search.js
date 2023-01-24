@@ -1,11 +1,11 @@
 const Search = () => {
     return (
         <header>
-            <h2 className="header__title">Find Real Estate that suits you</h2>
+            <h3 className="header__title">Find Real Estate that suits you from the comfort of your home</h3>
             <input
                 type="text"
                 className="header__search"
-                placeholder="Enter an address, neighborhood, city, or ZIP code"
+                placeholder="Enter an address, city name, zip code"
                
             />
              

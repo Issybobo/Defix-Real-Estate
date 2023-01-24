@@ -6,13 +6,14 @@ import Navigation from './components/Navigation';
 import Search from './components/Search';
 import Home from './components/Home';
 
+
+
 // ABIs
 import RealEstate from './abis/RealEstate.json'
 import Escrow from './abis/Escrow.json'
-
 // Config
 import config from './config.json';
-
+import './index.css'
 function App() {
   const [provider, setProvider] = useState(null)
   const [escrow, setEscrow] = useState(null)
@@ -73,11 +74,12 @@ function App() {
 
         <hr />
 
+
         <div className='cards'>
           {homes.map((home, index) => (
             <div className='card' key={index} onClick={() => togglePop(home)}>
               <div className='card__image'>
-                <img src={home.image} alt="Home" />
+                <img className='nft-img' src={home.image} alt="Home" />
               </div>
               <div className='card__info'>
                 <h4>{home.attributes[0].value} ETH</h4>
@@ -116,10 +118,14 @@ function App() {
                <p>
                 <br></br>
                  Defix is a mainland Property Management and Real Estate Services organization company 
+                 
                  <br></br>
                  <br></br>
                  We are pros in the field of the land
-                 business, property executives, and new improvement promoting. <br></br>Our customers incorporate people, 
+                 business, property executives, and new improvement promoting.
+                  <br></br>
+                   <br></br>
+                 Our customers incorporate people, 
                  private financial specialists, business elements, syndications, centers, and townhouses.
                  </p>
         </div>

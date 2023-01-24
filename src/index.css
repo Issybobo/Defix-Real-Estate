@@ -7,12 +7,12 @@
 }
 
 :root {
-  --clr-white: #FFFFFF;
-  --clr-black: #b80000;
+  --clr-white: #cdd5e6;
+  --clr-black: #202020;
   --clr-grey: #707070;
   --clr-blue: #6C63FF;
-  --clr-blue-2: #469ab6;
-  --clr-green: #26a61a;
+  --clr-blue-2: #4c46b6;
+  --clr-green: #4fb646;
 }
 
 body {
@@ -98,7 +98,7 @@ nav {
 /* -- HEADER -- */
 
 header {
-  background-image: url("./assets/houses.png");
+  background-image : url("./assets/house.png"   ) ;
   background-position: center;
   background-size: cover;
   min-height: 40vh;
@@ -344,6 +344,16 @@ header {
 
   cursor: default;
 }
+.nft-img {
+  object-fit: cover !important;
+    background-repeat: no-repeat !important;
+    background-size: auto, auto, cover !important ;
+    border-radius: 10px !important; 
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(7, 26, 39, 0.9)), linear-gradient(180deg, rgba(24, 17, 116, 0.8), rgba(0, 0, 0, 0.8)), url('https://ipfs.io/ipfs/QmQUozrHLAusXDxrvsESJ3PYB3rUeUuBAvVWw6nop2uu7c/2.png') !important;
+  }
+
+
+
 
 .style {text-align: center;}
 
